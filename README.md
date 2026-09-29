@@ -1,101 +1,26 @@
-<div align="center">
+# BiliPure
 
-# 🌿 BiliPure
+本仓库是「BiliPure」的安卓版本获取入口，附使用资料索引。
 
-**B站 AI 内容过滤器 — 还你一个真实的信息流**
+## 安装文件资源（夸克网盘）
 
-[![Chrome Web Store](https://img.shields.io/badge/Chrome-Web%20Store-brightgreen?logo=googlechrome&logoColor=white)](https://github.com/Junky1001/bilipure)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/Junky1001/bilipure?style=social)](https://github.com/Junky1001/bilipure)
+> **BiliPure 安装文件资源（夸克网盘）**：[https://pan.quark.cn/s/3d576a5bf1f9](https://pan.quark.cn/s/3d576a5bf1f9)
 
-</div>
+## 官方项目
+
+- 上游项目：[Junky1001/bilipure](https://github.com/Junky1001/bilipure)
+
+## 更多资料
+
+- [下载与安装教程](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/BiliPure/%E4%B8%8B%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md)
+- [和BiliPai是同一个软件吗](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/BiliPure/%E5%92%8CBiliPai%E6%98%AF%E5%90%8C%E4%B8%80%E4%B8%AA%E8%BD%AF%E4%BB%B6%E5%90%97.md)
+- [和官方哔哩哔哩App有什么区别](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/BiliPure/%E5%92%8C%E5%AE%98%E6%96%B9%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9App%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB.md)
+- [常见问题与故障排查](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/BiliPure/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5.md)
+- [搜索与播放设置怎么用](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/BiliPure/%E6%90%9C%E7%B4%A2%E4%B8%8E%E6%92%AD%E6%94%BE%E8%AE%BE%E7%BD%AE%E6%80%8E%E4%B9%88%E7%94%A8.md)
+- [登录账号与观看数据同步](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/BiliPure/%E7%99%BB%E5%BD%95%E8%B4%A6%E5%8F%B7%E4%B8%8E%E8%A7%82%E7%9C%8B%E6%95%B0%E6%8D%AE%E5%90%8C%E6%AD%A5.md)
+- [第三方客户端登录会封号吗](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/BiliPure/%E7%AC%AC%E4%B8%89%E6%96%B9%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%99%BB%E5%BD%95%E4%BC%9A%E5%B0%81%E5%8F%B7%E5%90%97.md)
+- [全部软件目录](https://github.com/alipymanbu/Android/blob/master/%E5%85%A8%E9%83%A8%E8%BD%AF%E4%BB%B6%E7%9B%AE%E5%BD%95.md)
 
 ---
 
-B站的 AI 生成视频越来越多，但你只想看真人创作的内容？
-
-**BiliPure** 自动识别 B站平台标注的 AI 生成/合成视频，一键过滤，让你的首页、搜索、推荐流回归真实。
-
-> 不做 AI 检测，不调用模型，只读取 B站已有的官方标注 → **零误判**
-
-## 效果展示
-
-### 警示模式 — 醒目横幅提醒，仍可选择观看
-
-![警示模式](visual/warn-mode.png)
-
-### 过滤模式 — 直接屏蔽，护眼壁纸替代
-
-![过滤模式](visual/block-mode.png)
-
-### 插件面板 — 一键切换，统计过滤数量
-
-![插件面板](visual/popup.png)
-
-## 功能特性
-
-- **两种过滤模式**：警示（红色横幅提醒）/ 过滤（护眼壁纸全屏屏蔽）
-- **全场景覆盖**：首页推荐流、搜索结果、视频播放页、侧边栏推荐
-- **实时拦截**：通过 API 拦截 + DOM 扫描双重检测，无限滚动也不漏
-- **零误判**：只读取 B站官方 `argue_info` AI 标注，不做主观判断
-- **隐私友好**：不收集任何数据，不联网，设置存储在本地
-- **轻量无感**：< 100KB，MutationObserver 防抖，不影响浏览体验
-
-## 安装
-
-### 方式一：Chrome Web Store（审核中）
-
-上架后将提供直接安装链接。
-
-### 方式二：手动安装（开发者模式）
-
-1. 下载本仓库：`git clone https://github.com/Junky1001/bilipure.git`
-2. 安装依赖并构建：
-   ```bash
-   cd bilipure
-   pnpm install
-   pnpm build
-   ```
-3. 打开 Chrome，进入 `chrome://extensions/`
-4. 开启右上角 **「开发者模式」**
-5. 点击 **「加载已解压的扩展程序」**，选择 `.output/chrome-mv3/` 目录
-6. 打开 B站，开始使用
-
-## 技术栈
-
-| 层 | 技术 |
-|---|------|
-| 框架 | [WXT](https://wxt.dev) (Manifest V3) |
-| UI | React + Tailwind CSS |
-| 检测 | B站 API `argue_info` 拦截 + DOM 关键词扫描 |
-| 存储 | `chrome.storage.sync` |
-
-## 工作原理
-
-```
-B站 API 响应                    页面 DOM
-     │                            │
-     ▼                            ▼
-MAIN world 脚本               ISOLATED world 脚本
-拦截 fetch/XHR              MutationObserver 监听
-解析 argue_info                   │
-     │                            │
-     └──── CustomEvent ───────────┘
-                │
-                ▼
-         检测到 AI 标注
-                │
-          ┌─────┴─────┐
-          ▼           ▼
-      警示模式     过滤模式
-     红色横幅     护眼壁纸
-```
-
-## 反馈与贡献
-
-- 发现 bug 或有功能建议？欢迎 [提 Issue](https://github.com/Junky1001/bilipure/issues)
-- 觉得有用？给个 Star 就是最大的支持
-
-## License
-
-[MIT](LICENSE)
+> 本仓库由上游项目 fork 而来，原始说明见[上游仓库](https://github.com/Junky1001/bilipure)。
